@@ -12,7 +12,7 @@
 }
 
 /* ==========================================================================
-   CONFIGURAÇÕES GERAIS E FUNDO TOTAL DO SITE
+   CONFIGURAÇÕES GERAIS E FUNDO DEGRADÊ COMPLETO
    ========================================================================== */
 * {
     margin: 0;
@@ -21,7 +21,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo composto de forma fixa e fluida com degradê imersivo Azul Profundo + Preto */
 body {
     background: linear-gradient(180deg, var(--preto-absoluto) 0%, var(--azul-profundo) 50%, var(--preto-absoluto) 100%);
     color: var(--branco);
@@ -30,7 +29,7 @@ body {
 }
 
 /* ==========================================================================
-   CABEÇALHO (HEADER COM SUPORTE PARA LOGO IMAGE)
+   CABEÇALHO (HEADER COM LOGO ALINHADO)
    ========================================================================== */
 header {
     background-color: rgba(11, 15, 25, 0.95);
@@ -52,7 +51,7 @@ header {
 }
 
 .logo-img {
-    height: 55px; /* Altura ideal para harmonizar com o menu */
+    height: 55px;
     width: auto;
     object-fit: contain;
     border-radius: 4px;
@@ -137,7 +136,7 @@ nav ul li a:hover {
 }
 
 /* ==========================================================================
-   VITRINE DE PRODUTOS (TEMA ESCURO)
+   VITRINE DE PRODUTOS
    ========================================================================== */
 .produtos-container {
     padding: 70px 5%;
@@ -199,6 +198,16 @@ nav ul li a:hover {
     font-size: 19px;
     color: var(--branco);
     margin-bottom: 12px;
+}
+
+.link-titulo-produto {
+    color: var(--branco); 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.link-titulo-produto:hover {
+    color: var(--laranja);
 }
 
 .produto-info p {
