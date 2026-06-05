@@ -1,6 +1,3 @@
-/* ==========================================================================
-   PALETA DE CORES PERSONALIZADA - TEMA ESCURO (AZUL, PRETO, LARANJA)
-   ========================================================================== */
 :root {
     --azul-escuro: #002D85;
     --azul-profundo: #001A4E;
@@ -11,9 +8,6 @@
     --branco: #FFFFFF;
 }
 
-/* ==========================================================================
-   CONFIGURAÇÕES GERAIS E FUNDO DEGRADÊ COMPLETO
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -28,9 +22,6 @@ body {
     background-attachment: fixed;
 }
 
-/* ==========================================================================
-   CABEÇALHO (HEADER COM LOGO ALINHADO)
-   ========================================================================== */
 header {
     background-color: rgba(11, 15, 25, 0.95);
     border-bottom: 3px solid var(--azul-escuro);
@@ -92,9 +83,6 @@ nav ul li a:hover {
     color: var(--laranja);
 }
 
-/* ==========================================================================
-   BANNER PRINCIPAL (HERO DESTAQUE)
-   ========================================================================== */
 .hero {
     background: radial-gradient(circle at center, rgba(0,45,133,0.3) 0%, rgba(11,15,25,0.7) 100%);
     padding: 90px 5%;
@@ -135,9 +123,6 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   VITRINE DE PRODUTOS
-   ========================================================================== */
 .produtos-container {
     padding: 70px 5%;
     max-width: 1200px;
@@ -214,8 +199,7 @@ nav ul li a:hover {
     font-size: 14px;
     color: var(--cinza-texto);
     margin-bottom: 18px;
-    height: 65px;
-    overflow: hidden;
+    height: auto;
 }
 
 .produto-preco {
@@ -242,9 +226,6 @@ nav ul li a:hover {
     background-color: #003cc2;
 }
 
-/* ==========================================================================
-   RODAPÉ (FOOTER)
-   ========================================================================== */
 footer {
     background-color: rgba(11, 15, 25, 0.98);
     color: var(--cinza-texto);
@@ -254,13 +235,6 @@ footer {
     border-top: 3px solid var(--laranja);
 }
 
-footer p {
-    font-size: 14px;
-}
-
-/* ==========================================================================
-   RESPONSIVIDADE (DISPOSITIVOS MÓVEIS)
-   ========================================================================== */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
