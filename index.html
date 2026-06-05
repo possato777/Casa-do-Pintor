@@ -1,14 +1,92 @@
-<div class="produto-card">
-    <div class="produto-imagem">🎨</div>
-    <div class="produto-info">
-        <h4>
-            <a href="produtos.html" style="color: var(--branco); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--laranja)'" onmouseout="this.style.color='var(--branco)'">
-                Tinta Acrílica Premium
-            </a>
-        </h4>
-        <p>Tintas de alta cobertura e acabamento impecável. Clique no título ou no botão para ver as marcas e opções disponíveis.</p>
-        <span class="produto-preco">Várias Opções</span>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Pintor - Loja de Tintas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="WhatsApp Image 2026-06-05 at 13.28.45.jpeg" alt="Casa do Pintor Logo" class="logo-img">
+            <div class="logo-texto">
+                <h1>Casa do Pintor</h1>
+                <span>Aqui fica fácil pintar!</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>As melhores tintas para a sua <span>casa ou obra</span></h2>
+        <p>Qualidade, variedade e as cores ideais para transformar o seu ambiente.</p>
+        <a href="#produtos" class="btn-cta">Ver Catálogo de Itens</a>
+    </section>
+
+    <main class="produtos-container" id="produtos">
+        <h3>Nossos Itens em Destaque</h3>
         
-        <a href="produtos.html" class="btn-detalhes">Ver Marcas e Cores</a>
-    </div>
-</div>
+        <div class="grid-produtos">
+            
+            <div class="produto-card">
+                <div class="produto-imagem">🎨</div>
+                <div class="produto-info">
+                    <h4>
+                        <a href="produtos.html" style="color: var(--branco); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--laranja)'" onmouseout="this.style.color='var(--branco)'">
+                            Tinta Acrílica Premium
+                        </a>
+                    </h4>
+                    <p>Tintas de alta cobertura e acabamento impecável. Clique no título ou no botão para ver as marcas e opções disponíveis.</p>
+                    <span class="produto-preco">Várias Opções</span>
+                    <a href="produtos.html" class="btn-detalhes">Ver Marcas e Cores</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">🖌️</div>
+                <div class="produto-info">
+                    <h4>Pincel Profissional de Cerdas Mistas</h4>
+                    <p>Perfeito para acabamentos finos e recortes precisos. Possui ótima retenção de tinta e cabo ergonômico que facilita o manuseio.</p>
+                    <span class="produto-preco">Sob Consulta</span>
+                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">🪣</div>
+                <div class="produto-info">
+                    <h4>Massa Corrida Premium</h4>
+                    <p>Fácil de aplicar e lixar. Indicada para nivelar e corrigir imperfeições rasas em paredes de alvenaria ou gesso antes da pintura.</p>
+                    <span class="produto-preco">Sob Consulta</span>
+                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">✨</div>
+                <div class="produto-info">
+                    <h4>Verniz Sol & Chuva Brilhante</h4>
+                    <p>Proteção máxima para superfícies de madeira contra ações do tempo (sol e chuva). Realça os veios naturais da madeira com alto brilho.</p>
+                    <span class="produto-preco">Sob Consulta</span>
+                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casa do Pintor. Todos os direitos reservados.</p>
+        <p style="margin-top: 5px; font-size: 12px; color: var(--laranja);">Aqui fica fácil pintar!</p>
+    </footer>
+
+</body>
+</html>
