@@ -1,0 +1,271 @@
+/* ==========================================================================
+   PALETA DE CORES PERSONALIZADA - TEMA ESCURO (AZUL, PRETO, LARANJA)
+   ========================================================================== */
+:root {
+    --azul-escuro: #002D85;
+    --azul-profundo: #001A4E;
+    --laranja: #FF6600;
+    --preto-absoluto: #0B0F19;
+    --preto-card: #161D30;
+    --cinza-texto: #B2C0D4;
+    --branco: #FFFFFF;
+}
+
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E FUNDO TOTAL DO SITE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo composto de forma fixa e fluida com degradê imersivo Azul Profundo + Preto */
+body {
+    background: linear-gradient(180deg, var(--preto-absoluto) 0%, var(--azul-profundo) 50%, var(--preto-absoluto) 100%);
+    color: var(--branco);
+    line-height: 1.6;
+    background-attachment: fixed;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER COM SUPORTE PARA LOGO IMAGE)
+   ========================================================================== */
+header {
+    background-color: rgba(11, 15, 25, 0.95);
+    border-bottom: 3px solid var(--azul-escuro);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 55px; /* Altura ideal para harmonizar com o menu */
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.logo-texto h1 {
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.logo-texto span {
+    color: var(--laranja);
+    font-size: 13px;
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cinza-texto);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--laranja);
+}
+
+/* ==========================================================================
+   BANNER PRINCIPAL (HERO DESTAQUE)
+   ========================================================================== */
+.hero {
+    background: radial-gradient(circle at center, rgba(0,45,133,0.3) 0%, rgba(11,15,25,0.7) 100%);
+    padding: 90px 5%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero h2 span {
+    color: var(--laranja);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--cinza-texto);
+}
+
+.btn-cta {
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: transform 0.2s, background 0.3s;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-cta:hover {
+    background-color: #e05900;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   VITRINE DE PRODUTOS (TEMA ESCURO)
+   ========================================================================== */
+.produtos-container {
+    padding: 70px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos-container h3 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--branco);
+    margin-bottom: 45px;
+}
+
+.produtos-container h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--laranja);
+    margin: 12px auto 0;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.produto-card {
+    background-color: var(--preto-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 45, 133, 0.4);
+}
+
+.produto-imagem {
+    background: linear-gradient(135deg, #1f293d 0%, #111724 100%);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    border-bottom: 2px solid var(--azul-escuro);
+}
+
+.produto-info {
+    padding: 22px;
+}
+
+.produto-info h4 {
+    font-size: 19px;
+    color: var(--branco);
+    margin-bottom: 12px;
+}
+
+.produto-info p {
+    font-size: 14px;
+    color: var(--cinza-texto);
+    margin-bottom: 18px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.produto-preco {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--laranja);
+    display: block;
+    margin-bottom: 18px;
+}
+
+.btn-detalhes {
+    display: block;
+    text-align: center;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 11px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-detalhes:hover {
+    background-color: #003cc2;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: rgba(11, 15, 25, 0.98);
+    color: var(--cinza-texto);
+    text-align: center;
+    padding: 35px 5%;
+    margin-top: 80px;
+    border-top: 3px solid var(--laranja);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (DISPOSITIVOS MÓVEIS)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .logo-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    nav ul li {
+        margin: 0 12px;
+    }
+    .hero h2 {
+        font-size: 28px;
+    }
+}
