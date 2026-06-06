@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa do Pintor - Loja de Tintas</title>
+    <title>Casa do Pintor - Aqui fica fácil pintar!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho com Logo -->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo-container">
             <img src="WhatsApp Image 2026-06-05 at 13.28.45.jpeg" alt="Casa do Pintor Logo" class="logo-img">
@@ -19,80 +19,57 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal -->
+    <!-- Banner Principal (Hero) -->
     <section class="hero">
-        <h2>As melhores tintas para a sua <span>casa ou obra</span></h2>
-        <p>Qualidade, variedade e as cores ideais para transformar o seu ambiente.</p>
-        <a href="#produtos" class="btn-cta">Ver Catálogo de Itens</a>
+        <h2>Transforme seu ambiente com as <span>Melhores Tintas</span></h2>
+        <p>Qualidade premium, variedade de acabamentos e o melhor atendimento da região.</p>
+        <a href="#produtos" class="btn-cta">Conhecer Categorias</a>
     </section>
 
-    <!-- Vitrine Principal -->
+    <!-- Seção de Categorias de Produtos -->
     <main class="produtos-container" id="produtos">
-        <h3>Nossos Itens em Destaque</h3>
+        <h2 style="text-align: center; margin-bottom: 40px; color: #ffffff;">Nossas Categorias</h2>
         
-        <div class="grid-produtos">
+        <div class="grid-produtos" style="justify-content: center;">
             
-            <!-- Item 1: Redireciona para produtos.html -->
-            <div class="produto-card">
-                <div class="produto-imagem">🎨</div>
-                <div class="produto-info">
-                    <h4>
-                        <a href="produtos.html" class="link-titulo-produto">
-                            Tinta Acrílica Premium
-                        </a>
-                    </h4>
-                    <p>Tintas de alta cobertura e acabamento impecável. Clique no título ou no botão para ver as marcas e opções disponíveis.</p>
-                    <span class="produto-preco">Várias Opções</span>
-                    <a href="produtos.html" class="btn-detalhes">Ver Marcas e Cores</a>
+            <!-- CARD DA CATEGORIA: TINTAS ACRÍLICAS PREMIUM (FOTO NO LUGAR DO EMOJI) -->
+            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
+                
+                <!-- CONTAINER DA IMAGEM DA LATA -->
+                <div class="categoria-imagem-container" style="width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <img src="Metalatex-Elastic-Semiacetinado-18L.jpg" alt="Categoria Tinta Acrílica Premium" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                 </div>
+
+                <!-- INFO DA CATEGORIA -->
+                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
+                    <div>
+                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Tinta Acrílica Premium</h3>
+                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
+                            As melhores marcas, cores vivas e acabamentos perfeitos (fosco, acetinado e brilho) para valorizar o seu projeto.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="produtos.html" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Ver Produtos</a>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Item 2: Pincel -->
-            <div class="produto-card">
-                <div class="produto-imagem">🖌️</div>
-                <div class="produto-info">
-                    <h4>Pincel Profissional de Cerdas Mistas</h4>
-                    <p>Perfeito para acabamentos finos e recortes precisos. Possui ótima retenção de tinta e cabo ergonômico que facilita o manuseio.</p>
-                    <span class="produto-preco">Sob Consulta</span>
-                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
-                </div>
-            </div>
-
-            <!-- Item 3: Massa Corrida -->
-            <div class="produto-card">
-                <div class="produto-imagem">🪣</div>
-                <div class="produto-info">
-                    <h4>Massa Corrida Premium</h4>
-                    <p>Fácil de aplicar e lixar. Indicada para nivelar e corrigir imperfeições rasas em paredes de alvenaria ou gesso antes da pintura.</p>
-                    <span class="produto-preco">Sob Consulta</span>
-                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
-                </div>
-            </div>
-
-            <!-- Item 4: Verniz -->
-            <div class="produto-card">
-                <div class="produto-imagem">✨</div>
-                <div class="produto-info">
-                    <h4>Verniz Sol & Chuva Brilhante</h4>
-                    <p>Proteção máxima para superfícies de madeira contra ações do tempo (sol e chuva). Realça os veios naturais da madeira com alto brilho.</p>
-                    <span class="produto-preco">Sob Consulta</span>
-                    <a href="#" class="btn-detalhes">Fazer Orçamento</a>
-                </div>
-            </div>
+            <!-- Se você tiver outras categorias, basta duplicar o bloco acima e trocar a imagem e os textos -->
 
         </div>
     </main>
 
-    <footer>
+    <!-- Rodapé -->
+    <footer id="contato">
         <p>&copy; 2026 Casa do Pintor. Todos os direitos reservados.</p>
-        <p style="margin-top: 5px; font-size: 12px; color: var(--laranja);">Aqui fica fácil pintar!</p>
     </footer>
 
 </body>
