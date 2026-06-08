@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa do Pintor - Aqui fica fácil pintar!</title>
+    <title>Linha Standard - Casa do Pintor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,113 +20,59 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="esmalte.html">Esmalte</a></li>
-                <li><a href="economica-standard.html">Econômica & Standard</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal (Hero) -->
-    <section class="hero">
-        <h2>Transforme seu ambiente com as <span>Melhores Tintas</span></h2>
-        <p>Qualidade premium, variedade de acabamentos e o melhor atendimento da região.</p>
-        <a href="#produtos" class="btn-cta">Conhecer Categorias</a>
+    <!-- Sub-banner da Categoria -->
+    <section class="hero" style="padding: 50px 5%;">
+        <h2>Linha <span>Standard</span></h2>
+        <p>O melhor custo-benefício, alto rendimento e cobertura ideal para o seu bolso.</p>
+        <a href="index.html" class="btn-cta" style="padding: 8px 20px; font-size: 14px;">← Voltar para o Início</a>
     </section>
 
-    <!-- Seção de Categorias de Produtos -->
-    <main class="produtos-container" id="produtos">
-        <h2 style="text-align: center; margin-bottom: 40px; color: #ffffff;">Nossas Categorias</h2>
-        
+    <!-- Exibição dos Produtos da Categoria -->
+    <main class="produtos-container">
         <div class="grid-produtos">
             
-            <!-- CATEGORIA 1: TINTAS ACRÍLICAS PREMIUM -->
-            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
-                <div class="categoria-imagem-container" style="background: #ffffff; padding: 15px; width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-                    <img src="Metalatex-Elastic-Semiacetinado-18L.png" alt="Categoria Tinta Acrílica Premium" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            <!-- PRODUTO 1: NovaCor Cobre Mais -->
+            <div class="produto-card" style="display: flex; flex-direction: column; height: auto;">
+                <div class="produto-imagem" style="background: #ffffff; padding: 20px; height: 280px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0; border-radius: 8px 8px 0 0;">
+                    <img src="novacor-cobre-mais.png" alt="Sherwin Williams NovaCor Cobre Mais Fosca" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                 </div>
-                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
+                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                     <div>
-                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Tintas Acrílicas Premium</h3>
-                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
-                            As melhores marcas, cores vivas e acabamentos perfeitos (fosco, acetinado e brilho) para valorizar seu projeto.
+                        <h4>NovaCor Cobre Mais Fosca</h4>
+                        <span style="display: block; font-size: 12px; font-weight: bold; color: #718096; margin-bottom: 10px;">📐 Tamanhos disponíveis: 3,6L e 18L</span>
+                        <p style="font-size: 13px; line-height: 1.5; color: var(--cinza-texto); height: auto; margin-bottom: 15px; overflow: visible;">
+                            Tinta à base de resina acrílica de acabamento fosco que possui excelente rendimento aliado a uma cobertura ideal. Possui alto poder de cobertura que permite a pintura de ambientes na medida certa. Indicada para aplicação em ambientes externos e internos.
                         </p>
                     </div>
                     <div>
-                        <a href="produtos.html" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Ver Produtos</a>
+                        <span class="produto-preco">Sob Consulta</span>
+                        <a href="https://api.whatsapp.com/send?phone=5542999426012&text=Olá! Quero consultar o preço da NovaCor Cobre Mais Fosca." target="_blank" class="btn-detalhes" style="background-color: var(--laranja);">Consultar no WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <!-- CATEGORIA 2: LINHA DE ESMALTES -->
-            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
-                <div class="categoria-imagem-container" style="background: #ffffff; padding: 15px; width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-                    <img src="esmalte-sintetico-tradicional.png" alt="Categoria Esmaltes" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            <!-- PRODUTO 2: NovaCor Extra Semibrilho -->
+            <div class="produto-card" style="display: flex; flex-direction: column; height: auto;">
+                <div class="produto-imagem" style="background: #ffffff; padding: 20px; height: 280px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0; border-radius: 8px 8px 0 0;">
+                    <img src="novacor-extra-fosco.png" alt="Sherwin Williams NovaCor Extra Semibrilho" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                 </div>
-                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
+                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                     <div>
-                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Esmaltes</h3>
-                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
-                            Tintas esmalte de alta performance para madeiras e metais. Fórmulas ecológicas à base de água com secagem rápida e sem cheiro.
+                        <h4>NovaCor Extra Semibrilho</h4>
+                        <span style="display: block; font-size: 12px; font-weight: bold; color: #718096; margin-bottom: 10px;">📐 Tamanhos disponíveis: 3,6L e 18L</span>
+                        <p style="font-size: 13px; line-height: 1.5; color: var(--cinza-texto); height: auto; margin-bottom: 15px; overflow: visible;">
+                            Tinta acrílica indicada para ambientes exteriores e interiores. Por ser sem cheiro, permite que a pintura seja feita em áreas internas ocupadas e garante que o ambiente permaneça sem cheiro* em até 1 hora após aplicação.
                         </p>
                     </div>
                     <div>
-                        <a href="esmalte.html" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Ver Produtos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CATEGORIA 3: LINHA ECONÔMICA / STANDARD (ATUALIZADA) -->
-            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
-                <div class="categoria-imagem-container" style="background: #ffffff; padding: 15px; width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-                    <img src="novacor-cobre-mais.png" alt="Categoria Econômica e Standard" style="max-height: 100%; max-width: 100%; object-fit: contain;">
-                </div>
-                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
-                    <div>
-                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Econômica & Standard</h3>
-                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
-                            Tintas com excelente custo-benefício, ideal para renovar ambientes internos com economia e rendimento.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="economica-standard.html" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Ver Produtos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CATEGORIA 4: VERNIZES E STAINS -->
-            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
-                <div class="categoria-imagem-container" style="width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 50px;">
-                    🪵
-                </div>
-                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
-                    <div>
-                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Vernizes & Stains</h3>
-                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
-                            Proteção de alto desempenho para superfícies de madeira, realçando a beleza natural com ação contra sol e chuva.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://api.whatsapp.com/send?phone=5542999426012&text=Olá! Gostaria de informações sobre os vernizes e stains disponíveis." target="_blank" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Consultar no WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CATEGORIA 5: ACESSÓRIOS PARA PINTURA -->
-            <div class="produto-card" style="display: flex; flex-direction: column; height: auto; text-align: center; padding: 25px;">
-                <div class="categoria-imagem-container" style="width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 50px;">
-                    🖌️
-                </div>
-                <div class="produto-info" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding: 0;">
-                    <div>
-                        <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 10px;">Acessórios em Geral</h3>
-                        <p style="font-size: 14px; line-height: 1.5; color: var(--cinza-texto); margin-bottom: 20px;">
-                            Pincéis, rolos, fitas crepe, lixas e tudo o que você precisa para preparar a superfície e garantir um acabamento perfeito.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://api.whatsapp.com/send?phone=5542999426012&text=Olá! Preciso de ajuda para escolher acessórios e ferramentas para pintura." target="_blank" class="btn-detalhes" style="background-color: var(--laranja); display: inline-block; width: 100%; text-align: center; text-decoration: none;">Consultar no WhatsApp</a>
+                        <span class="produto-preco">Sob Consulta</span>
+                        <a href="https://api.whatsapp.com/send?phone=5542999426012&text=Olá! Quero consultar o preço da NovaCor Extra Semibrilho." target="_blank" class="btn-detalhes" style="background-color: var(--laranja);">Consultar no WhatsApp</a>
                     </div>
                 </div>
             </div>
